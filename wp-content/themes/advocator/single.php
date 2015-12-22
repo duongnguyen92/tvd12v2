@@ -10,7 +10,7 @@ get_header(); ?>
 
   <div class="row" role="main">
 
-    <div class="large-7 columns inner_content">
+    <div class="large-12 columns inner_content">
 
 		<main id="main" class="site-main" role="main">
 
@@ -32,10 +32,8 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
-
-    </div><!-- .inner_content .large-7 -->
-
-	<?php get_sidebar(); ?>
+	<?php get_search_form(); ?>
+    </div><!-- .inner_content .large-12 -->
 
   </div><!-- .row -->
 

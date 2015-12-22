@@ -156,8 +156,11 @@ if ( ! function_exists( 'advocator_enqueue_foundation' ) ) :
 
     function advocator_enqueue_foundation() {
         wp_enqueue_style( 'advocator-foundation-style', get_template_directory_uri() . '/app.css' );
+        wp_enqueue_style( 'advocator-bootstrap-min', get_template_directory_uri() . '/css/bootstrap.min.css' );
+        wp_enqueue_style( 'advocator-bootstrap-theme.min', get_template_directory_uri() . '/css/bootstrap-theme.min.css' );
         wp_enqueue_script( 'advocator-foundation-js', get_template_directory_uri() . '/js/foundation.js', array( 'jquery' ), '5.4.7', true );
         wp_enqueue_script( 'advocator-modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), '2.8.3', true );
+        wp_enqueue_script( 'advocator-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '1.0.0', true );
     }
 
 endif; // advocator_enqueue_foundation
@@ -269,3 +272,15 @@ require get_template_directory() . '/inc/theme-info/welcome-screen.php';
 /*----------------------------------------------------*/
 require get_template_directory() . '/inc/class-tgm-plugin-activation.php';
 require get_template_directory() . '/inc/plugins.php';
+	function regitster_header_searchbar() {
+		register_sidebar( array(
+		'name' => __( 'Header Search', 'rescue' ),
+		'id' => 'header-search',
+		'description' => __( 'Header Search', 'rescue' ),
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title-rescue">',
+		'after_title' => '</h3>',
+	) );
+	}
+	add_action( 'widgets_init', 'regitster_header_searchbar' );

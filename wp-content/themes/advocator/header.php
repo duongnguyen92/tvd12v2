@@ -62,7 +62,7 @@
       </nav><!-- .top_mini_nav -->
 
   </div><!-- .large-12 -->
-
+  <div class="search-header"> <?php dynamic_sidebar('header-search'); ?></div>
   </div><!-- .row -->
 
 </div><!-- .top_header_wrap -->

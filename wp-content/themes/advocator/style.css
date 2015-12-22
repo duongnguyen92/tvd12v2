@@ -272,6 +272,7 @@ object {
 }
 .top_header_wrap h1.site-title a:hover {
   color: #1fa67a;
+  text-decoration: none;
 }
 .top_header_wrap h2.site-description {
   color: #FFFFFF;
@@ -339,6 +340,7 @@ object {
 .top_header_wrap .top-bar-section ul,
 .top_header_wrap .top-bar.expanded .title-area {
   background: #2c3135;
+  position: relative;
 }
 
 .top-bar ul > li.has-dropdown .dropdown li:hover, .top-bar ul > li.has-dropdown .dropdown li:focus {
@@ -388,6 +390,7 @@ object {
 
 .top-bar-section ul li:hover:not(.has-form) a:hover:not(.button) {
   color: #DDDDDD;
+  text-decoration: none;
 }
 
 .top-bar-section li.active:not(.has-form) a:hover:not(.button) {
@@ -528,7 +531,7 @@ object {
   margin: 0 auto;
 }
 .hero_slider .soliloquy-theme-classic .soliloquy-pager {
-  bottom: 110px !important;
+  bottom: 60px !important;
   text-align: center !important;
   margin: 0 !important;
   /* Mobile */
@@ -1850,7 +1853,7 @@ a.image_hover > img:hover {
   color: #34495e;
 }
 .inner_sidebar .widget, .inner_sidebar .widget p .widget {
-  margin-bottom: 2e;
+  margin-bottom: 2em;
 }
 
 .widget_recent_entries ul {
@@ -1860,6 +1863,7 @@ a.image_hover > img:hover {
   min-height: 4em;
   list-style: none;
   clear: both;
+  margin-top: 22px;
 }
 .widget_recent_entries a {
   width: 60%;
@@ -2070,6 +2074,7 @@ a.image_hover > img:hover {
   -moz-transition: 0.2s;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  font-size: 1.5rem;
 }
 .footer_widget a:hover, .footer_widget a:focus {
   color: #1fa67a;
@@ -2080,9 +2085,10 @@ a.image_hover > img:hover {
 .footer_widget input, .footer_widget select, .footer_widget textarea {
   background: #252A2E;
   border: 2px solid #2E2E2E;
-  padding: 11px;
+  padding: 15px;
   width: 100%;
   color: #EFEFEF;
+  font-size: 14px;
 }
 .footer_widget input[type="email"]:focus, .footer_widget input[type="text"]:focus {
   background: #252A2E;
@@ -2120,7 +2126,7 @@ a.image_hover > img:hover {
 
 .footer_widget form.wpcf7-form p {
   margin-bottom: .5rem;
-  font-size: 13px !important;
+  font-size: 15px !important;
   color: #838383 !important;
 }
 
@@ -2453,4 +2459,28 @@ form[id*="give-form"] .give-donation-amount #give-amount {
   box-shadow: none;
   color: #38474d;
   height: 3rem;
+}
+
+.search-header {
+  width: 20%;
+  position: absolute;
+  right: 11%;
+  bottom: -2px;
+}
+.search-header .search-field {
+  width: 100%;
+  float: left;
+  height: 28px;
+  margin-left: 50%;
+  margin-top: 1px;
+}
+.search-header .search-submit {
+  float: right;
+  margin-right: 16%;
+  text-indent: -100px;
+  border: none;
+  background: url('img/search-icon.png');
+  width: 32px;
+  height: 32px;
+  display: inline-block;
 }
